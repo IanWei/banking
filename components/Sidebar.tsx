@@ -27,7 +27,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
                     >Horizon</h1>
                 </Link>
                 {sidebarLinks.map((item) => {
-                    const isActive = pathName === item.route || pathName.startsWith(item.route)
+                    const isActive = pathName === item.route
                     return <Link className={cn('sidebar-link', {'bg-bank-gradient': isActive})} href={item.route}
                                  key={item.label}>
                         <div className="relative size-6">
